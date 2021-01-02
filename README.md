@@ -1,24 +1,6 @@
-# find-your-clique-spotify-token-retriever
+# FindYourClique Spotify Token Retriever
+This webpage is used to make the user login into Spotify and get their api token.
 
-## Project setup
-```
-npm install
-```
+I use this to make users send their Spotify api token to my Telegram Bot, which needs it to do its thing later on.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[findyourclique.pauabella.dev](https://findyourclique.pauabella.dev "Take a look")
