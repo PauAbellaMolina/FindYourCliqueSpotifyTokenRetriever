@@ -1,7 +1,3 @@
-.test {
-    border: 1px solid red;
-}
-
 /* MAYBE USING ROBOTO NORMAL INSTEAD?? */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
@@ -19,8 +15,8 @@ html {
 }
 
 body {
-    background-color: #8c82fc !important;
-    color: #4fffcd !important;
+    background-color: #000 !important;
+    color: #9D86E9 !important;
 }
 
 /* Fa que no es printegi el feed al generar la img */
@@ -29,7 +25,7 @@ body {
 } */
 
 .specialTS {
-    text-shadow: 0.05em 0.055em 0px #b693fe;
+    text-shadow: 0.05em 0.055em 0px #EDC988;
 }
 
 .link {
@@ -51,24 +47,26 @@ body {
     #home .title {
         font-size: 5vw;
         font-weight: bold;
-        text-shadow: 0.05em 0.055em 0px #b693fe;
+        text-shadow: 0.05em 0.055em 0px #EDC988;
     }
     #home .subtitle {
         font-size: 2vw;
     }
 
     #home span.subtitle {
+        width: 50%;
         font-size: 1.5vw;
     }
     #home button.homeBtn {
+        width: 61%;
         height: 2em;
         border: none;
         border-radius: 10px;
         background-color: #7149c0 !important;
-        color: #4fffcd !important;
+        color: #EDC988 !important;
     }
         #home button.homeBtn:hover {
-            text-shadow: 0.05em 0.055em 0px #b693fe;
+            text-shadow: 0.05em 0.055em 0px #9D86E9;
         }
         #home button.homeBtn:focus {
             outline: none;
@@ -77,11 +75,18 @@ body {
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
-
-/* RESULTS/FEED */
-#instaPage {
-    min-height: 100vh;
-}
+    #home .tokenInput {
+        width: 40%;
+    }
+        #home .tokenInput input {
+            background-color: #000 !important;
+            color: #EDC988;
+            border: 1px solid #9D86E9;
+        }
+        #home .tokenInput button {
+            background-color: #9D86E9 !important;
+            color:#000;
+        }
 
 #main {
     /* box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.50); */
@@ -93,98 +98,6 @@ body {
     color: #ffffff !important;
     font-family: 'Roboto', sans-serif;
 }
-
-    #nav {
-        font-weight: 900;
-        font-size: 1.3em;
-        letter-spacing: 1px;
-    }
-
-    #header {
-        padding: .7em 1em 1em 1em
-    }
-        #header .imgProfile {
-            max-width: 110px;
-            /* background: linear-gradient(to bottom, #d82b7e, #f57939); */
-            background: linear-gradient(135deg, #8c82fc, #4fffcd);
-            padding: .16em;
-            border-radius: 100%;
-        }
-        #header .bio {
-            white-space: pre-wrap;
-        }
-        #header .followButton {
-            background-color: #3199F3;
-            color: inherit;
-            border: 0;
-            border-radius: 4px;
-            outline: none;
-            font-weight: 700;
-            letter-spacing: .4px;
-        }
-        #header .userInfoCounters {
-            font-weight: 700;
-        }
-            #header .userInfoCounters .data {
-                font-size: 1.1em;
-            }
-            #header .userInfoCounters .label {
-                font-size: .9em;
-                font-weight: 400;
-                color: #e2e2e2;
-            }
-
-    #underNav {
-        font-weight: 400;
-        letter-spacing: .3px;
-    }
-        #underNav span {
-            cursor: pointer;
-        }
-            #underNav .labelActive {
-                font-weight: 800;
-            }
-
-    #body {
-        width: 33.33%;
-        padding-bottom: 33.33%;
-        overflow: hidden;
-        position: relative;
-    }
-        #children {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border: 1px solid black;
-        }
-        #children:hover {
-            cursor: pointer;
-        }
-        #childrenLabel {
-            font-family: 'Roboto', sans-serif;
-            position: absolute;
-            z-index: 100;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            font-size: 20px;
-            height: 100%;
-            width: 100%;
-            display: flex;
-        }
-        #childrenLabel:hover {
-            cursor: pointer;
-        }
-    
-    #support {
-        font-size: 20px;
-    }
-    #support span:first-child {
-        font-size: 15px;
-    }
-    #support span {
-        font-size: 18px;
-    }
 
 /* MOBILE */
 @media only screen and (max-width: 600px) {
@@ -202,15 +115,17 @@ body {
         #home .subtitle {
             font-size: 5vw;
         }
-
-    /* RESULTS/FEED */
-    #main {
-        box-shadow: none;
-        margin-top: 0;
-        width: 100%;
-        min-height: 100%;
-    }
-        #photos {
-            margin-bottom: 0;
+        #home span.subtitle {
+            width: 100%;
+            font-size: 3.3vw;
+        }
+        #home button.homeBtn {
+            width: 85%;
+        }
+        #home .tokenInput {
+            width: 75%;
+        }
+        #home .mblSize {
+            font-size: 2.7vw;
         }
 }
