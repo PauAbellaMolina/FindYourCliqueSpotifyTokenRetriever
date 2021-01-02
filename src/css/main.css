@@ -1,0 +1,216 @@
+.test {
+    border: 1px solid red;
+}
+
+/* MAYBE USING ROBOTO NORMAL INSTEAD?? */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+/* GENERAL */
+html {
+    height: 100vh !important;
+}
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #8c82fc !important;
+    color: #4fffcd !important;
+}
+
+/* Fa que no es printegi el feed al generar la img */
+/* #app {
+    min-height: 100%;
+} */
+
+.specialTS {
+    text-shadow: 0.05em 0.055em 0px #b693fe;
+}
+
+.link {
+    color: inherit;
+    text-decoration: inherit;
+}
+.link:hover {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+    font-style: italic;
+}
+
+/* HOME */
+#home {
+    height: 100vh;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+    #home .title {
+        font-size: 5vw;
+        font-weight: bold;
+        text-shadow: 0.05em 0.055em 0px #b693fe;
+    }
+    #home .subtitle {
+        font-size: 2vw;
+    }
+
+    #home span.subtitle {
+        font-size: 1.5vw;
+    }
+    #home button.homeBtn {
+        height: 2em;
+        border: none;
+        border-radius: 10px;
+        background-color: #7149c0 !important;
+        color: #4fffcd !important;
+    }
+        #home button.homeBtn:hover {
+            text-shadow: 0.05em 0.055em 0px #b693fe;
+        }
+        #home button.homeBtn:focus {
+            outline: none;
+        }
+    #home p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+/* RESULTS/FEED */
+#instaPage {
+    min-height: 100vh;
+}
+
+#main {
+    /* box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.50); */
+    background-color: #000000 !important;
+    width: 400px;
+    margin-top: 5em;
+    /* min-height: 600px; */
+    margin-bottom: 3em;
+    color: #ffffff !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+    #nav {
+        font-weight: 900;
+        font-size: 1.3em;
+        letter-spacing: 1px;
+    }
+
+    #header {
+        padding: .7em 1em 1em 1em
+    }
+        #header .imgProfile {
+            max-width: 110px;
+            /* background: linear-gradient(to bottom, #d82b7e, #f57939); */
+            background: linear-gradient(135deg, #8c82fc, #4fffcd);
+            padding: .16em;
+            border-radius: 100%;
+        }
+        #header .bio {
+            white-space: pre-wrap;
+        }
+        #header .followButton {
+            background-color: #3199F3;
+            color: inherit;
+            border: 0;
+            border-radius: 4px;
+            outline: none;
+            font-weight: 700;
+            letter-spacing: .4px;
+        }
+        #header .userInfoCounters {
+            font-weight: 700;
+        }
+            #header .userInfoCounters .data {
+                font-size: 1.1em;
+            }
+            #header .userInfoCounters .label {
+                font-size: .9em;
+                font-weight: 400;
+                color: #e2e2e2;
+            }
+
+    #underNav {
+        font-weight: 400;
+        letter-spacing: .3px;
+    }
+        #underNav span {
+            cursor: pointer;
+        }
+            #underNav .labelActive {
+                font-weight: 800;
+            }
+
+    #body {
+        width: 33.33%;
+        padding-bottom: 33.33%;
+        overflow: hidden;
+        position: relative;
+    }
+        #children {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid black;
+        }
+        #children:hover {
+            cursor: pointer;
+        }
+        #childrenLabel {
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            z-index: 100;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 20px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+        #childrenLabel:hover {
+            cursor: pointer;
+        }
+    
+    #support {
+        font-size: 20px;
+    }
+    #support span:first-child {
+        font-size: 15px;
+    }
+    #support span {
+        font-size: 18px;
+    }
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    #body {
+        background-color: #000000 !important;
+    }
+    /* HOME */
+    #home > div {
+        height: 100vh;
+        justify-content: center;
+    }
+        #home .title {
+            font-size: 7vw;
+        }
+        #home .subtitle {
+            font-size: 5vw;
+        }
+
+    /* RESULTS/FEED */
+    #main {
+        box-shadow: none;
+        margin-top: 0;
+        width: 100%;
+        min-height: 100%;
+    }
+        #photos {
+            margin-bottom: 0;
+        }
+}
