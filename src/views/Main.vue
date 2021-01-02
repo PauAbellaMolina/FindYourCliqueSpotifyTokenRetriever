@@ -2,7 +2,7 @@
   <div id="home" class="d-flex flex-row align-items-center">
     <div class="w-100 ml-2 d-flex flex-column align-items-center">
       <h1 class="title">Great!</h1>
-      <span class="subtitle mb-3 text-center">Send the code below to the <span class="specialTS">FindYourClique Bot</span> on Telegram.</span>
+      <span class="subtitle mb-3 text-center">Copy the token below and go back to the <span class="specialTS">FindYourClique Bot</span> on Telegram.</span>
       <b-input-group class="tokenInput d-flex justify-content-center">
         <b-form-input class="mblSize text-center" v-model="this.inputValue" disabled></b-form-input>
         <b-input-group-append>
